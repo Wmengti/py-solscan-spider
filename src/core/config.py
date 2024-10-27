@@ -23,7 +23,7 @@ class Settings(BaseSettings):
     hashes_file_path: str | None = os.getenv("HASHES_FILE_PATH", None)
 
     # Parse settings
-    main_url: str = "https://solscan.io/account/"
+    main_url: str = "https://solscan.io/token/"
 
     # Google sheets settings
     sheet_scopes: list[str] = [

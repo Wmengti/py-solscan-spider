@@ -4,9 +4,10 @@ from pydantic import BaseModel
 
 
 class SolscanResult(BaseModel):
-    date: datetime = datetime.now()
-    hash: str = "-"
-    sol_count: str = "-"
-    sol_usd: str = "-"
-    spl_count: str = "-"
-    spl_usd: str = "-"
+    signature: str = "-",
+    time: str = "-",
+    action: str = "-",
+    from_account: str = "-",
+    to_account: str = "-",
+    change_amount: str = "-",
+    token: str = "-",
